@@ -1,4 +1,5 @@
 /* src/app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
 :root {
     --bg-gray-100: #f7fafc;
     --gray-500: #a0aec0;
