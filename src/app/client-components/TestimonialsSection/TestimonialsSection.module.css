@@ -1,28 +1,8 @@
 /* Fichier: TestimonialsSection.module.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
-
-/* La directive :global() permet d'utiliser des s\u00e9lecteurs globaux comme :root et body */
-:global(:root) {
-    --bg-gray-100: #f7fafc;
-    --gray-500: #a0aec0;
-    --gray-800: #2d3748;
-    --blue-600: #3b82f6;
-    --white: #fff;
-    --gray-400: #cbd5e0;
-    --gray-600: #4a5568;
-    --blue-200: #bee3f8;
-    --card-gap: 1.5rem; /* Espace entre les cartes */
-}
-
-:global(body) {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-gray-100);
-}
 
 .testimonialsSection {
     padding: 4rem 1rem;
-    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-gray-100);
 }
 
 .container {
@@ -65,7 +45,7 @@
 
 .testimonialCard {
     flex-shrink: 0;
-    width: 100%; /* Default to one card per view on smaller screens */
+    width: 100%; /* Par défaut, une carte par vue sur les petits \u00e9crans */
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -77,16 +57,10 @@
 
 @media (min-width: 1024px) {
   .testimonialCard {
-    /* Calculates the width to fit 3 cards with the defined gap */
+    /* Calcul de la largeur pour que 3 cartes s'affichent avec l'espacement d\u00e9fini */
     width: calc((100% / 3) - (2 * var(--card-gap) / 3));
   }
 }
-
-/* Styles pour les t\u00e9moignages color\u00e9s (supprim\u00e9) */
-/* .featured {
-    background-color: var(--blue-600);
-    color: var(--white);
-} */
 
 .quoteIcon {
     position: absolute;
