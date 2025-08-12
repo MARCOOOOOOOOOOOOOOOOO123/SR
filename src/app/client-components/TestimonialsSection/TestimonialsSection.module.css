@@ -1,10 +1,20 @@
 /* Fichier: TestimonialsSection.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
 
+/* La directive :global() permet d'utiliser des s\u00e9lecteurs globaux comme :root et body */
+:global(:root) {
+    --bg-gray-100: #f7fafc;
+    --gray-500: #a0aec0;
+    --gray-800: #2d3748;
+    --blue-600: #3b82f6;
+    --white: #fff;
+    --gray-400: #cbd5e0;
+    --gray-600: #4a5568;
+    --blue-200: #bee3f8;
+    --card-gap: 1.5rem; /* Espace entre les cartes */
+}
 
-
-body {
-    font-family: 'Inter', sans-serif;
+:global(body) {
     margin: 0;
     padding: 0;
     background-color: var(--bg-gray-100);
@@ -12,6 +22,7 @@ body {
 
 .testimonialsSection {
     padding: 4rem 1rem;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
