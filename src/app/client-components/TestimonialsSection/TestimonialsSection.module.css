@@ -1,0 +1,151 @@
+/* Fichier: TestimonialsSection.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --bg-gray-100: #f7fafc;
+    --gray-500: #a0aec0;
+    --gray-800: #2d3748;
+    --blue-600: #3b82f6;
+    --white: #fff;
+    --gray-400: #cbd5e0;
+    --gray-600: #4a5568;
+    --blue-200: #bee3f8;
+    --card-gap: 1.5rem; /* Espace entre les cartes */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-gray-100);
+}
+
+.testimonialsSection {
+    padding: 4rem 1rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.title {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gray-800);
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.25rem;
+    }
+}
+
+.carouselWrapper {
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+.carouselContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: var(--card-gap);
+}
+
+.testimonialCard {
+    flex-shrink: 0;
+    width: 100%; /* Default to one card per view on smaller screens */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    position: relative;
+    background-color: var(--white);
+    color: var(--gray-600);
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .testimonialCard {
+    /* Calculates the width to fit 3 cards with the defined gap */
+    width: calc((100% / 3) - (2 * var(--card-gap) / 3));
+  }
+}
+
+/* Styles pour les t\u00e9moignages color\u00e9s (supprim\u00e9) */
+/* .featured {
+    background-color: var(--blue-600);
+    color: var(--white);
+} */
+
+.quoteIcon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    font-weight: 900;
+    opacity: 0.1;
+    color: var(--gray-400);
+}
+
+/* Styles pour le texte et l'auteur */
+.testimonialText {
+    margin-top: 2rem;
+    font-size: 1.125rem;
+}
+
+.authorInfo {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorAvatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    border: 4px solid var(--white);
+    transform: translateY(-3rem);
+}
+
+.authorName {
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: var(--gray-800);
+}
+
+.authorJob {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+.carouselDots {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--gray-400);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.activeDot {
+    background-color: var(--blue-600);
+}

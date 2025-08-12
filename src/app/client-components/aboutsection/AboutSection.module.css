@@ -1,0 +1,48 @@
+/* Styles pour la section '\u00c0 propos' de la page d'accueil */
+.aboutSection {
+  background-color: #f7fafc; /* gray-100 */
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.textContainer {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    text-align: left;
+  }
+}
+
+.title {
+  color: #f6ad55; /* orange-400 */
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 1.875rem; /* text-3xl */
+  line-height: 1.4;
+  color: #1a202c; /* gray-900 */
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 2.25rem; /* text-4xl */
+  }
+}
