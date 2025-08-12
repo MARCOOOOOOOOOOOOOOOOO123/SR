@@ -1,0 +1,141 @@
+/* Fichier: Footer.module.css */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 3rem 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.logoAndSlogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .logoAndSlogan {
+        align-items: flex-start;
+    }
+}
+
+.brandName {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 0.875rem;
+    color: #a0a0a0;
+    margin-top: 0.25rem;
+}
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .footerLinks {
+        width: auto;
+    }
+}
+
+.linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-right: 800px;
+}
+
+.linkTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.link {
+    font-size: 0.875rem;
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+.divider {
+    height: 1px;
+    background-color: #4a4a4a;
+    margin: 3rem auto 2rem;
+    max-width: 1280px;
+}
+
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .bottomSection {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .socialIcons {
+        margin-bottom: 0;
+    }
+}
+
+.socialIcons a {
+    color: #fff;
+    background-color: #4a4a4a;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.socialIcons a:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: #a0a0a0;
+}
