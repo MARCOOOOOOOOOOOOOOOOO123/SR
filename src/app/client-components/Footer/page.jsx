@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/app/client-components/HeroSection/HeroSection.module.css';
+import styles from '@/app/client-components/Footer/Footer.module.css';
 import Image from 'next/image';
 
 // Composant de pied de page
