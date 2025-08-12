@@ -12,7 +12,7 @@ const Footer = () => {
         <div className={styles.logoAndSlogan}>
           <div className={styles.logo}>
             {/* \u00c0 personnaliser avec le logo de l'\u00e9glise */}
-            <h2 className={styles.brandName}>SR EGLISE</h2>
+            <h2 className={styles.brandName}>SACERDOCE ROYAL</h2>
             <p className={styles.slogan}>Slogan de l'Eglise</p>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Footer = () => {
           <a href="#" aria-label="LinkedIn"><Linkedin size={24} /></a>
         </div>
         <p className={styles.copyright}>
-          &copy; {new Date().getFullYear()} SR EGLISE. Tous droits réserves.
+          &copy; {new Date().getFullYear()} SACERDOCE ROYAL. Tous droits réserves.
         </p>
       </div>
     </footer>
