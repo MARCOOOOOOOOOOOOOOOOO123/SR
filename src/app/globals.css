@@ -1,5 +1,15 @@
 /* src/app/globals.css */
-
+:root {
+    --bg-gray-100: #f7fafc;
+    --gray-500: #a0aec0;
+    --gray-800: #2d3748;
+    --blue-600: #3b82f6;
+    --white: #fff;
+    --gray-400: #cbd5e0;
+    --gray-600: #4a5568;
+    --blue-200: #bee3f8;
+    --card-gap: 1.5rem; /* Espace entre les cartes */
+}
 /* Réinitialisation de base */
 * {
   box-sizing: border-box;
