@@ -6,6 +6,7 @@ import SermonSection from '@/app/client-components/SermonSection/page';
 import FeaturedMessages from '@/app/client-components/FeaturedMessages/page';
 import AboutSection from '@/app/client-components/aboutsection/page'; // Importing the AboutSection component
 import Testimonials from '@/app/client-components/TestimonialsSection/page';
+import Footer from '@/app/client-components/Footer/page';
 import styles from '@/app/page.module.css'; // Assuming you have a CSS module for the main page styles
 
 
@@ -19,6 +20,7 @@ const HomePage = () => {
         <SermonSection />
         <FeaturedMessages />
         <Testimonials />
+        <Footer />
       </main>
     </div>
   );
