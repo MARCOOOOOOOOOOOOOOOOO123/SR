@@ -1,0 +1,100 @@
+/* Fichier: LeadersSection.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+.leadersSection {
+  padding: 4rem 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fb8c00; /* Couleur orange de l'image */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #2d3748;
+  max-width: 700px;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+}
+
+.leadersGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .leadersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .leadersGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.leaderCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.leaderCard:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%; /* Ratio d'aspect 3:2 (400/600) */
+}
+
+.leaderImage {
+  /* Next.js Image avec layout="fill" g\u00e8re l'image, pas besoin de ces r\u00e8gles */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  color: #fff;
+  padding: 1.5rem;
+  text-align: left;
+  transition: opacity 0.3s ease;
+}
+
+.leaderRole {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffc107; /* Jaune de l'image pour le r\u00f4le */
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.leaderName {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+}

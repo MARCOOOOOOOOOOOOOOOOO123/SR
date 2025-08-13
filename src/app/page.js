@@ -8,6 +8,11 @@ import AboutSection from '@/app/client-components/aboutsection/page'; // Importi
 import Testimonials from '@/app/client-components/TestimonialsSection/page';
 import Footer from '@/app/client-components/Footer/page';
 import ContactSection from './client-components/ContactSection/page';
+import LeadersSection from './client-components/LeadersSection/page';
+import DonationsSection from './client-components/DonationsSection/page';
+import BibleVerseCarousel from './client-components/BibleVerseCarousel/page';
+import UpcomingEventsSection from './client-components/UpcomingEventsSection/page';
+import InvitationSection from './client-components/InvitationSection/page';
 import styles from '@/app/page.module.css'; // Assuming you have a CSS module for the main page styles
 
 
@@ -18,10 +23,15 @@ const HomePage = () => {
       <main>
         <HeroSection />
         <AboutSection /> {/* Adding the AboutSection component */}
+        <UpcomingEventsSection />
         <SermonSection />
         <FeaturedMessages />
+        <BibleVerseCarousel />
+        <DonationsSection />
+        <LeadersSection />
         <Testimonials />
         <ContactSection />
+        <InvitationSection />
         <Footer />
       </main>
     </div>

@@ -1,0 +1,97 @@
+/* Fichier: UpcomingEventsSection.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+.eventsSection {
+  padding: 4rem 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fb8c00;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2d3748;
+  max-width: 600px;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventItem {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.eventItem:first-child {
+  border-top: 1px solid #e2e8f0;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  width: 4rem;
+  text-align: center;
+}
+
+.day {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.month {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a0aec0;
+  text-transform: uppercase;
+}
+
+.eventTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2d3748;
+  flex-grow: 1;
+}
+
+.detailsLink {
+  color: #fb8c00;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.detailsLink:hover {
+  transform: translateX(5px);
+}

@@ -8,24 +8,54 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const testimonials = [
+ {
+    text: "Le nouveau OptinMonster avec son back-end web est tout simplement incroyable. Avec OptinMonster, nous avons trouvé un moyen simple et très efficace d'augmenter nos abonnés à la newsletter. Cet outil vaut chaque centime !",
+    author: "Jane Rowling",
+    job: "Banquier",
+    avatar: "https://placehold.co/100x100/A0AEC0/000?text=JR"
+  },
+  {
+    text: "J'étais moi-même un sceptique, je n'aimais pas du tout les pop-ups. Mais nous avons doublé nos inscriptions par email, donc les résultats parlent d'eux-mêmes. Ça fonctionne, tout simplement. OptinMonster rend la tâche super facile et vaut largement son prix.",
+    author: "Emillia Bubu",
+    job: "Commerçante",
+    avatar: "https://placehold.co/100x100/667EEA/000?text=EB"
+  },
+  {
+    text: "OptinMonster m'a apporté plus d'abonnés, ce qui est une évidence, mais ce qui est encore plus important, c'est que la mise en place et le bon fonctionnement avec mon site et mon design ont été fluides et excellents ! J'adore le produit et les gens qui sont derrière.",
+    author: "Judy Dowson",
+    job: "Maire",
+    avatar: "https://placehold.co/100x100/A0AEC0/000?text=JD"
+  },
     {
-      text: "The new OptinMonster with the web back-end is just amazing. With OptinMonster, we found an easy-to-use and very effective way to increase our newsletter subscribers. This tool is worth every penny!",
-      author: "Jane Rowling",
-      job: "Copywriter",
-      avatar: "https://placehold.co/100x100/A0AEC0/000?text=JR"
-    },
-    {
-      text: "I was once a disbeliever myself, I didn't like popups at all. But we doubled our email signups, so the results speak for themselves. It just works. OptinMonster makes it super easy and is well worth the money.",
-      author: "Emillia Bubu",
-      job: "UI/UX Designer",
-      avatar: "https://placehold.co/100x100/667EEA/000?text=EB"
-    },
-    {
-      text: "OptinMonster brought me more subscribers, which is a given, but what's more important was that setting it up and making it work well with my site and design was seamless and excellent! I love the product and the people behind it.",
-      author: "Judy Dowson",
-      job: "PHP Developer",
-      avatar: "https://placehold.co/100x100/A0AEC0/000?text=JD"
-    },
+    text: "J'ai trouvé dans cette église une communauté qui m'a accueillie à bras ouverts. Les enseignements sont profonds et pertinents pour ma vie quotidienne. C'est un véritable lieu de croissance spirituelle.",
+    author: "Elodie M.",
+    job: "Infirmière",
+    avatar: "https://placehold.co/100x100/A0AEC0/000?text=EM"
+  },
+  {
+    text: "Le ministère de la jeunesse est incroyablement dynamique. J'ai pu développer mon leadership et ma foi dans un environnement sûr et stimulant. Je me sens vraiment à ma place ici.",
+    author: "Samuel P.",
+    job: "Etudiant",
+    avatar: "https://placehold.co/100x100/A0AEC0/000?text=SP"
+  },
+  {
+    text: "Grâce au Sacerdoce Royal, ma vie de prière a été révolutionnée. Le pasteur a une façon unique de précher qui rend la Parole de Dieu accessible et vivante pour tous.",
+    author: "Fatima B.",
+    job: "Gestionnaire de projet",
+    avatar: "https://placehold.co/100x100/A0AEC0/000?text=FB"
+  },
+  {
+    text: "J'ai rencontré des personnes formidables et j'ai trouvé une famille spirituelle. Les événements sont toujours bien organisés et inspirants. Je suis tellement reconnaissante d'en faire partie.",
+    author: "Chantal L.",
+    job: "Retraitée",
+    avatar: "https://placehold.co/100x100/A0AEC0/000?text=CL"
+  },
+  {
+    text: "Les enseignements sur le mariage et la famille ont été une bénédiction pour moi et mon épouse. Ils nous ont aidés à renforcer notre relation et à construire notre foyer sur des bases solides.",
+    author: "David et Marie",
+    job: " Entrepreneurs",
+    avatar: "https://placehold.co/100x100/A0AEC0/000?text=DM"
+  }
   ];
   
   // Utilise useEffect pour g\u00e9rer le d\u00e9filement automatique

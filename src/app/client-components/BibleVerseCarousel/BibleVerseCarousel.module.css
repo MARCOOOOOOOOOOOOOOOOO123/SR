@@ -1,0 +1,71 @@
+/* Fichier: BibleVerseCarousel.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+.carouselSection {
+  padding: 4rem 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselContainer {
+  max-width: 1000px;
+  width: 100%;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 4rem 1rem;
+}
+
+.verseContent {
+  text-align: center;
+  /* Ajout d'une transition pour une opacit\u00e9 plus lente */
+  transition: opacity 10s ease-in-out;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d3748;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .quote {
+    font-size: 4rem;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.navButton {
+  background: transparent;
+  border: none;
+  color: #fb8c00;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.navButton:hover {
+  transform: scale(1.1);
+}
+
+.reference {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
